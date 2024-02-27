@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .texto {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .summary {
+            margin-top: 20px;
+        }
+
+        .summary a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .summary a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="titulo">Formação HTML Web Developer</h1>
+    <hr />
+    <h2>Súmario:</h2>
+    <div class="sumary">
+        <a href="#titulo">Voltar ao Início</a>
+        <ol>
+            <li>
+                <h3 id="capitulo1">HTML : Primeiros passos</h3>
+                <ul>
+                    <li><a href="#1topico1">Entendendo Comunicação Cliente x Servidor</a></li>
+                    <li><a href="#1topico2">Introdução ao HTML na prática</a></li>
+                    <li><a href="#1topico3">Como entregar seu desafio de Projeto</a></li>
+                    <li><a href="#1topico4">Criar uma Página Web utilizando Tags aprendidas</a> </li>
+                    <li><a href="#1topico5">Materiais complementares Primeiros passos com HTML</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="capitulo1__topicos">
+        <h2 id="1topico1">Entendendo Comunicação Cliente x Servidor</h2>
+
+        <p class="texto">A comunicação entre cliente e servidor é um conceito fundamental na era digital, sendo a base
+            de interação
+            entre
+            dispositivos e serviços online. Imagine o cliente como um usuário comum, seja utilizando um navegador da web
+            ou
+            um aplicativo em seu smartphone. Este cliente busca informações ou realiza ações, e é nesse momento que a
+            comunicação com um servidor se torna essencial. O servidor, por sua vez, é um poderoso computador que
+            armazena
+            dados e fornece serviços.
+            Ele responde aos pedidos do cliente, enviando as informações solicitadas ou executando ações específicas.
+            Assim,
+            a
+            comunicação cliente-servidor é como uma conversa, onde o cliente faz perguntas e o servidor fornece as
+            respostas.</p>
+
+        <p class="texto">Para entender melhor, imagine que você está acessando uma rede social. O cliente é o seu
+            dispositivo, seja um
+            computador
+            ou um celular, e o servidor é o gigantesco centro de dados que armazena todas as informações da rede social.
+            Quando você
+            posta uma foto, o cliente envia essa informação para o servidor, que a armazena em seu banco de dados.
+            Quando
+            você
+            visualiza o feed de notícias, o cliente solicita ao servidor as últimas postagens, e o servidor envia essas
+            informações
+            de volta para o seu dispositivo. Essa troca constante de dados é a essência da comunicação cliente-servidor,
+            permitindo
+            que serviços online funcionem de maneira eficiente e rápida.</p>
+
+        <p class="texto">Portanto, a comunicação cliente-servidor é o alicerce invisível por trás de muitas atividades
+            online que
+            realizamos
+            diariamente. Desde acessar e-mails até comprar produtos em lojas virtuais, essa interação constante entre
+            cliente e
+            servidor permite que as informações fluam de maneira segura e eficaz, proporcionando uma experiência digital
+            integrada e
+            facilitando a vida das pessoas em um mundo cada vez mais conectado.</p>
+        <a href="#titulo">Voltar ao Início</a>
+        <h2 id="1topico2">Introdução ao HTML na prática</h2>
+        <p class="texto">O que é <abbr title="HyperText Markup Language"><b>HTML</b> ?</abbr>
+            O HTML é uma linguagem de marcação utilizada para criar páginas na web. Sua principal finalidade é
+            <strong>estruturar o
+                conteúdo</strong> disponibilizado em uma página. Imagine o HTML como a <strong>espinha dorsal</strong>
+            de um documento web. Ele define a
+            <strong>estrutura</strong> do conteúdo, como títulos, parágrafos, listas e links entre muitos outros.
+        </p>
+        <p class="texto">Elementos e Tags HTML:
+        <ul>
+            <li>Elementos: São os blocos básicos do HTML, como &lt;p&gt; para parágrafos, &lt;h1&gt; para títulos,
+                &lt;ul&gt; para listas não ordenadas, etc.
+            </li>
+            <li>Tags: São as marcas que envolvem os elementos, indicando seu início e fim. Por exemplo, &lt;p&gt; inicia
+                um
+                parágrafo, e &lt;/p&gt; o encerra.</li>
+        </ul>
+        </p>
+        <p class="texto">Estrutura de uma Página HTML:
+            Uma página HTML típica começa com a declaração do tipo de documento
+            &lt;!DOCTYPE html&gt;. Em seguida, temos a <strong>estrutura básica</strong>:
+        </p>
+        <p class="texto">Exemplo de Código HTML:</p>
+        <blockquote>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html lang="pt-BR"&gt;<br>
+            &lt;head&gt;Contém metadados, como o título da página.<br>
+            &lt;meta charset="UTF-8"&gt;<br>
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+            &lt;title&gt;Título da Minha Página&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;Aqui fica o conteúdo visível para os usuários.<br>
+            &lt;h1&gt;Bem-vindo ao Meu Site!&lt;/h1&gt;<br>
+            &lt;h2&gt;Este é um exemplo de página HTML.&lt;/h2&gt;<br>
+            &lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;<br>
+            &lt;a href="https://www.example.com"&gt;Como usar Link&lt;/a&gt;<br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;Item 1&lt;/li&gt;<br>
+            &lt;li&gt;Item 2&lt;/li&gt;<br>
+            &lt;li&gt;Item 3&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;img src="imagem.jpg" alt="Descrição da Imagem"&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+        </blockquote>
+
+        <p class="texto">Criando Hiperlinks:
+            Os hiperlinks conectam páginas entre si. Use a tag &lt;a&gt; para criar links:
+            <a href="https://www.exemplo.com">Visite nosso site</a>
+        </p>
+        <p class="texto">Recursos Adicionais: <br>
+        <ol>
+            <li><b>MDN Web Docs:</b> A Fundação Mozilla oferece um excelente curso que explora habilidades essenciais do
+                HTML. Os estudantes se familiarizam com a leitura, redação e participação na web ².
+
+            </li>
+            <li><b>Khan Academy:</b> Aprenda HTML e CSS para criar páginas web. HTML envolve o conteúdo, enquanto CSS
+                estiliza a
+                página ³.
+            <li><b>W3Schools:</b> Aprenda a codificar
+                Com o maior site de desenvolvedores web do mundo <a href="https://www.w3schools.com/">W3Schools</a>.
+            </li>
+            </li>
+            <li><b>DevMedia:</b> Oferece um curso sobre os principais conceitos do HTML na prática ⁴.</li>
+        </ol>
+
+        Lembre-se de que o HTML é uma ferramenta poderosa para criar conteúdo na web. Explore, pratique e divirta-se
+        enquanto aprende! 🌐📚</p>
+        <a href="#titulo">Voltar ao Início</a>
+        <h2 id="1topico3">Como entregar seu desafio de Projeto</h2>
+        <p class="texto">Aqui está um guia passo a passo para ajudar os alunos a entregarem seus desafios de projetos
+            usando Git e
+            GitHub:</p>
+
+        <p class="texto">Como Entregar Seu Desafio de Projetos Usando Git e GitHub:</p>
+        <ol>
+            <li>Configuração Inicial:
+                <p class="texto">Antes de começar, verifique se você já possui uma conta no GitHub. Se não tiver, crie
+                    uma em
+                    <a href="https://github.com/">GitHub</a>.
+                </p>
+            </li>
+            <li>Clonando o Repositório:
+                <ol>
+                    <li>Abra o terminal ou prompt de comando.</li>
+                    <li>Navegue até a pasta onde deseja salvar o projeto.</li>
+                    <li>Execute o seguinte comando para clonar o repositório do projeto:
+                        <br><code>git clone &lt;URL_DO_REPOSITÓRIO&gt.</code> <br>
+                        <p class="texto">Substitua <code>&lt;URL_DO_REPOSITÓRIO&gt;</code> pela URL do repositório
+                            fornecida pelo
+                            instrutor.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>Trabalhando no Projeto
+                <ol>
+                    <li>Abra o projeto em seu editor de código favorito.</li>
+                    <li>Faça as alterações necessárias nos arquivos.</li>
+                    <li>Adicione, modifique ou exclua arquivos conforme necessário.</li>
+                </ol>
+            </li><br>
+            <li>Commit e Push
+                <ol>
+                    <li>No terminal, navegue até a pasta do projeto.</li>
+                    <li>Execute os seguintes comandos para adicionar suas alterações e fazer um commit: <br>
+                        <code>git add . <br> git commit -m "Mensagem descritiva do commit"</code>
+                    </li>
+                    <li>Em seguida, envie suas alterações para o repositório remoto:
+                        <br><code>git commit -m "Mensagem descritiva do commit"</code>
+                    </li>
+                </ol>
+            </li><br>
+            <li>Criando um Pull Request
+                <ol>
+                    <li>Acesse o repositório no GitHub.</li>
+                    <li>Clique na guia "Pull Requests".</li>
+                    <li>Clique no botão "New Pull Request".</li>
+                    <li>Selecione o branch correto (geralmente o branch principal ou "main").</li>
+                    <li>Adicione uma descrição detalhada das alterações que você fez.</li>
+                    <li>Clique em "Create Pull Request".</li>
+                </ol>
+            </li><br>
+            <li>Aguardando a Revisão
+                <p class="texto">Agora, aguarde a revisão do instrutor ou colega. Eles podem fazer comentários ou
+                    solicitar alterações
+                    adicionais.</p>
+            </li>
+            <li>Merge e Conclusão <br>
+                <code>git push</code>
+            </li>
+        </ol>
+        <p class="texto">Após a aprovação, o Pull Request será mesclado ao branch principal. Seu desafio de projeto está
+            entregue!
+
+            Lembre-se de manter seu repositório atualizado com `git pull` regularmente e sempre documente suas
+            alterações
+            nos commits. Boa sorte! 🚀</p>
+        <a href="#titulo">Voltar ao Início</a>
+        <h2 id="1topico4">Criar uma Página Web utilizando Tags aprendidas</h2>
+        <p class="texto">Vamos criar uma página web simples utilizando algumas <strong>tags HTML</strong>. Primeiro, vou
+            explicar cada
+            parte e, em seguida, apresentarei um exemplo básico.</p>
+        <p class="texto">Aqui está uma breve explicação:</p>
+        <blockquote>
+            &lt;!DOCTYPE html&gt;: Define o tipo de documento como HTML5. <br>
+            &lt;html&gt;: A tag raiz que envolve todo o conteúdo da página.<br>
+
+            &lt;head&gt;: Contém metadados, como o título da página e informações sobre a codificação.<br>
+            &lt;meta&gt;: Define a codificação de caracteres e a escala de visualização.<br>
+            &lt;title&gt;: Define o título da página exibido na barra de título do navegador.<br>
+
+            &lt;body&gt;: Contém o conteúdo visível da página.<br>
+            &lt;h1&gt;: Cria um título de nível 1 (o maior) para a página.<br>
+            &lt;p&gt;: Cria parágrafos de texto.<br>
+            &lt;ul&gt; e &lt;li&gt;: Criam uma lista não ordenada com itens de lista.<br>
+            &lt;p&gt;Agora você tem uma página web básica pronta para ser visualizada no navegador!&lt;/p&gt;<br>
+            &lt;h2&gt; id="1topico5">Materiais complementares Primeiros passos com HTML&lt;/h2&gt;<br>
+            &lt;a&gt; href="#titulo"&gt;Voltar ao Início&lt;/a&gt;<br>
+        </blockquote>
+        <strong>Exemplo básico:</strong>
+        <hr>
+        <code>
+
+            <!DOCTYPE html>
+            <html lang="pt-br">
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Minha Página Web</title>
+            </head>
+            
+            <body>
+                <h1>Bem-vindo à Minha Página</h1>
+                <p>Esta é uma página de exemplo criada com HTML.</p>
+                <p>Aqui estão alguns tópicos que você pode aprender:</p>
+                <ul>
+                    <li>Como usar tags HTML para estruturar o conteúdo</li>
+                    <li>Como criar parágrafos e títulos</li>
+                    <li>Como adicionar links e imagens</li>
+                </ul>
+                <img src="https://www.mediapost.com.br/assets/uploads/2011/11/o-que-e-html.jpg" alt="Documento HTML">
+            </body>            
+            </html>          
+        </code>
+        <hr>
+        <a href="#titulo">Voltar ao Início</a>
+        <h2 id="1topico5">Materiais complementares - Primeiros passos com HTML</h2>
+        <p class="texto">Esses são alguns materiais complementares para quem está dando os <b>primeiros passos com
+                HTML</b>:</p>
+        <ul>
+            <li><strong>HTML básico no MDN</strong>
+                <p class="texto">Este artigo fornece uma compreensão básica do HTML e suas funções. Ele explica como
+                    usar tags HTML para estruturar o
+                    conteúdo de uma página web, como criar parágrafos, títulos, links e imagens</p>
+            </li>
+            <li><strong>Iniciando com HTML no
+                    MDN</strong>
+                <p class="texto">Princípios básicos do HTML, definindo elementos, atributos e outros termos importantes.
+                    É um ótimo ponto de partida para quem está começando a aprender HTML</p>
+            </li>
+            <li><strong>Curso da Fundação Mozilla: Introdução ao
+                    HTML</strong>
+                <p class="texto">Este curso explora e testa muitas das
+                    habilidades discutidas no módulo de Introdução ao HTML. Os estudantes se familiarizam com a leitura,
+                    a redação e a
+                    participação na web, através de uma série de seis partes. <br> É uma excelente maneira de aprender
+                    as bases da web através da
+                    produção e colaboração</p>
+            </li>
+            <li><strong>MDN Web Docs - HTML:</strong>
+                <p class="texto">A documentação oficial do Mozilla Developer Network (MDN) é uma excelente fonte para
+                    aprender HTML. Ela cobre desde os
+                    fundamentos até tópicos avançados, com exemplos práticos e explicações detalhadas.</p>
+            </li>
+            <li><strong>W3Schools - HTML Tutorial:</strong>
+                <p class="texto">W3Schools oferece um tutorial abrangente de HTML, que inclui exemplos de código e
+                    exercícios práticos. É uma ótima opção
+                    para iniciantes.</p>
+            </li>
+            <li><strong>HTML Dog:</strong>
+                <p class="texto">HTML Dog é um recurso online gratuito que oferece tutoriais e exemplos de código para
+                    HTML e CSS. É uma ótima ferramenta
+                    para aprender HTML de forma interativa.</p>
+            </li>
+        </ul>
+        <h3>Livros</h3>
+        <ol>
+            <li>"HTML5: A Prática"</li>
+            <p class="texto">Este livro é uma referência abrangente para desenvolvedores web que desejam aprofundar seus
+                conhecimentos em HTML5. Ele
+                cobre desde os elementos básicos até os recursos mais avançados do HTML5.</p>
+            <li>"HTML: A Essência"</li>
+            <p class="texto">por Jeremy Keith: Este livro é uma introdução concisa e prática ao HTML, focando em como
+                escrever HTML eficaz e
+                acessível.</p>
+            <li>"HTML e CSS: Design e Acessibilidade Web"</li>
+            <p class="texto">Design e Acessibilidade Web" por Jon Duckett: Este livro é uma introdução completa ao HTML
+                e CSS, ideal para iniciantes.
+                Ele aborda desde os fundamentos até tópicos avançados, com exemplos práticos.</p>
+        </ol>
+        <h3>Cursos OnLine</h3>
+        <ul>
+            <li>
+                <p>Curso de HTML - <a href="https://www.codecademy.com/learn/learn-html">Codecademy</a> Este curso
+                    interativo ensina HTML do básico ao avançado, com exercícios práticos e projetos</p>
+            </li>
+            <li>
+                <p>Curso de HTML - <a href="https://www.coursera.org/learn/html">Coursera</a> Este curso, oferecido pela
+                    Universidade de Michigan, aborda os fundamentos do HTML e como usá-lo para criar páginas da
+                    web.</p>
+            </li>
+            <li>
+                <p>Curso de HTML - <a href="https://www.udemy.com/topic/html/">Udemy</a> Este curso abrange desde os
+                    conceitos básicos de HTML até tópicos avançados, com exemplos práticos e projetos.</p>
+            </li>
+        </ul>
+        <a href="#titulo">Voltar ao Início</a>
+        <h3>Links de pesquisa</h3>
+        <a href="https://developer.mozilla.org/pt-BR/docs/learn/getting_started_with_the_web/html_basics">HTML básico
+            no MDN</a><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Iniciando Com
+            HTML no MDN</a><br>
+        <a href="(https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML">Curso Fundação
+            Mozilla</a><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs-HTML</a>
+        <a href="https://www.w3schools.com/html/">W3Schools</a><br>
+        <a href="https://htmldog.com/">HTML Dog</a><br>
+        <a href=""></a>
+    </div>
+</body>
+
+</html>
